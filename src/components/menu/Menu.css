@@ -1,0 +1,51 @@
+.header{
+  width: 100%;
+  margin: 5px 10px;
+  font-size: 17px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-name_name {
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  height: 60px;
+  vertical-align: top;
+  font-size: 1.5em;
+  margin-left: 20px;
+}
+
+.logo{
+  width: 60px;
+  fill: #efd88a;
+  stroke-width: 5px;
+  stroke: #6a5201;
+}
+
+.header-nav_list {
+  margin: 0;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  color: #ccc;
+}
+
+@media (max-width: 600px){
+  .logo{
+    width: 30px;
+  }
+  .site-name_name {
+    height: 30px;
+    font-size: 1em;
+  }
+  .header-nav_list{
+    font-size: 0.65em;
+    padding-right: 10px;
+  }
+}

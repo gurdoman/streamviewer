@@ -1,25 +1,5 @@
-body{
-  background-color: #1E2E53;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', Impact, sans-serif;
-}
-
 .container{
   width: 100%;
   max-width: 1120px;
   margin: auto;
-}
-
-.header{
-  width: 100%;
-  margin: 5px 10px;
-}
-
-.logo{
-  width: 60px;
-  fill: #efd88a;
-  stroke-width: 5px;
-  stroke: #6a5201;
 }
