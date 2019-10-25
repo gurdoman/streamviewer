@@ -36,6 +36,10 @@
   color: #ccc;
 }
 
+.header-nav_item{
+  cursor: pointer;
+}
+
 @media (max-width: 600px){
   .logo{
     width: 30px;
