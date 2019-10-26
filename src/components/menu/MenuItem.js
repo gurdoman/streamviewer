@@ -11,7 +11,7 @@ export default class MenuItem extends Component {
     return (
       <li className="header-nav_item">
         <GoogleLogin
-          clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+          clientId="1029989204063-83br7bejtl1a6kjom4l7ap1er2nq6raj.apps.googleusercontent.com"
           render={renderProps => (
             <span onClick={renderProps.onClick} disabled={renderProps.disabled}>Login</span>
           )}
