@@ -4,6 +4,21 @@ import './Menu.css';
 import MenuItem from './MenuItem';
 
 export default class Menu extends Component {
+  constructor(props){
+    super(props);
+
+    this.handleAuthSuccess = this.handleAuthSuccess.bind(this);
+    this.handleAuthFailure = this.handleAuthFailure.bind(this);
+  }
+
+  handleAuthSuccess(data){
+    this.props.handleLogin(data);
+  }
+
+  handleAuthFailure(error){
+    this.props.handleLoginError(error);
+  }
+
   render() {
     return (
       <header className="header">
@@ -12,9 +27,11 @@ export default class Menu extends Component {
             <Logo name="logo" className="logo" />
             <span className="site-name_name">streamviewer</span>
           </div>
-          <ul className="header-nav_list">
-            <MenuItem />
-          </ul>
+          <MenuItem 
+            {...this.props} 
+            handleAuthSuccess={this.handleAuthSuccess} 
+            handleAuthFailure={this.handleAuthFailure}
+          />
         </nav>
       </header>
     )
