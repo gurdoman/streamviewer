@@ -3,6 +3,8 @@ import { GoogleLogin } from 'react-google-login';
 import { GoogleLogout } from 'react-google-login';
 import UserInfo from './UserInfo';
 import axios from 'axios';
+import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default class MenuItem extends Component {
 
@@ -27,8 +29,7 @@ export default class MenuItem extends Component {
   }
 
   logoutUser(){
-    sessionStorage.removeItem('userData');
-    this.setState({logged : "NO"});
+    this.props.logoutUser();
   }
 
 
@@ -66,7 +67,12 @@ export default class MenuItem extends Component {
         <GoogleLogout
           clientId="1029989204063-83br7bejtl1a6kjom4l7ap1er2nq6raj.apps.googleusercontent.com"
           render={renderProps => (
-            <span onClick={renderProps.onClick} disabled={renderProps.disabled}>Logout</span>
+            <div 
+              onClick={renderProps.onClick} 
+              disabled={renderProps.disabled}>
+              <FontAwesomeIcon icon={faSignOutAlt} />
+              <span className="logout-button">Logout</span>
+            </div>
           )}
           buttonText="Logout"
           onLogoutSuccess={logout}
@@ -80,7 +86,7 @@ export default class MenuItem extends Component {
         <li className="header-nav_item">
           {userInfo}
         </li>
-        <li className="header-nav_item">
+        <li className={isLoggedIn === 'YES' ? 'logged header-nav_item' : 'header-nav_item'}>
           {button}
         </li>
       </ul>

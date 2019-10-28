@@ -3,6 +3,7 @@ import React from 'react';
 const UserInfo = props => {
   return (
     <div className="profile">
+      <div className="profile-name">Hello {props.user.name}</div>
       <div className="profile-pic">
         <img 
           src={props.user.picture}
@@ -10,7 +11,6 @@ const UserInfo = props => {
           alt="ProfilePic"
         />
       </div>
-      <div className="profile-name">Hello {props.user.name}</div>
     </div>
   )
 };

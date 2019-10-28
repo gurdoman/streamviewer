@@ -31,6 +31,7 @@ export default class Menu extends Component {
             {...this.props} 
             handleAuthSuccess={this.handleAuthSuccess} 
             handleAuthFailure={this.handleAuthFailure}
+            logoutUser={this.props.logoutUser}
           />
         </nav>
       </header>
