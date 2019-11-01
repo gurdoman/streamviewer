@@ -92,6 +92,7 @@ export default class App extends Component {
       videos = JSON.parse(message.body)
     }
     this.setState({videos});
+    this.setState({video: videos[0]})
   }
 
   handleChatId(id){
