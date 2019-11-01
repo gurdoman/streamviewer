@@ -1,0 +1,72 @@
+@font-face{
+  font-family: 'Natalie';
+  src: url("../../fonts/Natalie.ttf") format("truetype");
+}
+
+.brand{
+  font-family: 'Natalie';
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+.brand_logo-name-container{
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.brand_logo {
+  fill: #a16e83;
+  stroke: #b19f9e;
+  stroke-width: 1px;
+  width: 45px;
+  margin-left: 5px;
+}
+
+.brand_name {
+  display: inline-flex;
+  font-size: 1.5em;
+  align-items: baseline;
+  justify-content: flex-start;
+  line-height: 1em;
+  margin-left: 5px;
+}
+
+.brand_social {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+
+.brand_social-icon {
+  cursor: pointer;
+  margin: 0 7px;
+}
+
+@media only screen and (min-width: 768px) {
+  .brand{
+    justify-content: flex-start;
+  }
+  .brand_social{
+    margin: 0 30px;
+    margin: 0 50px;
+    font-size: 1.5em;
+  }
+
+  .brand_logo {
+    width: 75px;
+    margin-left: 10px;
+  }
+
+  .brand_name {
+    font-size: 4em;
+    margin-left: 20px;
+  }
+
+  .brand_social-icon{
+    margin: 0 10px;
+  }
+
+}

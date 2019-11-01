@@ -1,0 +1,68 @@
+.social_title{
+  font-family: 'Natalie';
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-top: 10px;
+  font-size: 1.5em;
+}
+
+.social_row {
+  display: flex;
+  flex-direction: column;
+}
+
+.social_button{
+  margin: 4%;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  height: 250px;
+  width: 92%;
+  box-sizing: border-box;
+}
+
+.social_youtube {
+  background-color: #c4302b;
+}
+
+.social_facebook {
+  background-color: #3b5998;
+}
+
+.social_twitter {
+  background-color: #38a1f3;
+}
+
+.social_instagram{
+  background-color: #e4405f;
+}
+
+.social-icon {
+  font-size: 80px;
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+}
+
+.social_button img {
+  height: 240px;
+  position: absolute;
+  top: 0px;
+  left: 70px;
+}
+
+@media only screen and (min-width: 768px) {
+  .social_row {
+    flex-direction: row;
+  }
+  .social_button {
+    margin: 10px;
+    width: 100%;
+  }
+
+  .social_title{
+    font-size: 3em;
+  }
+}
