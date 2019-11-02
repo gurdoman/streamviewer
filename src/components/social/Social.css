@@ -5,21 +5,23 @@
   padding-left: 15px;
   padding-top: 10px;
   font-size: 1.5em;
+  font-weight: bold;
 }
 
 .social_row {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  flex-direction: row;
 }
 
 .social_button{
-  margin: 4%;
+  margin: 2%;
   border-radius: 50px;
   cursor: pointer;
   position: relative;
-  height: 250px;
-  width: 92%;
+  height: 150px;
+  width: 46%;
   box-sizing: border-box;
+  display: inline-flex;
 }
 
 .social_youtube {
@@ -39,30 +41,66 @@
 }
 
 .social-icon {
-  font-size: 80px;
+  font-size: 40px;
   position: absolute;
   z-index: 2;
   top: 20px;
   left: 20px;
 }
 
-.social_button img {
-  height: 240px;
+.social-deco{
+  font-size: 4em;
   position: absolute;
-  top: 0px;
-  left: 70px;
+  z-index: 2;
+  top: 50%;
+  left: 45%;
+}
+.social_facebook .social-deco{
+  transform: rotate(320deg);
+  left: 42%;
+}
+.social_twitter .social-deco{
+  left: 55%
 }
 
 @media only screen and (min-width: 768px) {
   .social_row {
     flex-direction: row;
+    display: flex;
   }
   .social_button {
     margin: 10px;
     width: 100%;
+    height: 150px;
+  }
+
+  .social-deco{
+    font-size: 5em;
   }
 
   .social_title{
-    font-size: 3em;
+    font-size: 5em;
+  }
+
+  .social_instagram .social-deco{
+    top:55%;
+  }
+
+  .social-icon {
+    font-size: 80px;
+  }
+
+  .social {
+    margin: 0 3%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .social-deco{
+    font-size: 10em;
+  }
+
+  .social_button {
+    height: 250px;
   }
 }

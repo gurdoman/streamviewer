@@ -34,6 +34,7 @@
   display: flex;
   box-sizing: border-box;
   padding-left: 15px;
+  font-weight: bold;
 }
 
 .other-videos_title {
@@ -54,17 +55,17 @@
   .other-video {
     display: inline-flex;
     flex-direction: column;
-    width: 33%;
+    width: 25%;
     justify-content: space-around;
     align-items: center;
   }
 
   .other-videos_title{
-    font-size: 2em;
+    font-size: 4em;
   }
 
   .other-video_image {
-    width: 230px;
+    width: 95%;
   }
 
   .other-video_title {
@@ -73,12 +74,18 @@
   }
 
   .other-video_description {
-    padding: 0 10px;
+    padding: 0 3%;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .other-video_date {
     font-size: 0.6em;
     padding: 0px 0px 0px 5px;
+  }
+
+  .other-videos {
+    margin: 0 3% 20px;
   }
 
 }

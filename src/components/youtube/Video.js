@@ -6,10 +6,6 @@ import Chat from './Chat';
 
 export default class Video extends Component {
 
-  constructor(props){
-    super(props);
-  }
-
   componentDidMount(){
     this.connectToLivestreamSocket();
     this.getInitialVideos();
@@ -48,7 +44,7 @@ export default class Video extends Component {
     const isMobile = this.props.isMobile ? 'mobile ' : '';
     let video;
     if(id){
-      let src = `https://www.youtube.com/embed/${id}?autoplay=1&livemonitor=1`;
+      let src = `https://www.youtube.com/embed/${id}?autoplay=1`;
       video = <iframe src={src} className="video-player_main-video" title="YouTube Video" allow="accelerometer; autoplay; gyroscope; picture-in-picture" frameBorder="0"></iframe>
     }
     let chat = isMobile ? '' : 

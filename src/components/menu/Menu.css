@@ -3,6 +3,8 @@
   padding: 5px 10px;
   font-size: 13px;
   box-sizing: border-box;
+  background: #000;
+  margin-bottom: 25px;
 }
 .header-nav {
   display: flex;
@@ -17,12 +19,13 @@
   vertical-align: top;
   font-size: 0.9em;
   margin-left: 10px;
+  color: #FDCE4B
 }
 .logo{
   width: 30px;
-  fill: #cebc81;
+  fill: #0677a1;
   stroke-width: 5px;
-  stroke: #6a5201;
+  stroke: #2d4159;
 }
 .profile-pic {
   border-radius: 20px;

@@ -5,10 +5,10 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import YouTube from "./Youtube.png";
-import Facebook from "./Facebook.png";
-import Twitter from "./Twitter.png";
-import Instagram from "./Instagram.png";
+import { faHeadset } from '@fortawesome/free-solid-svg-icons';
+import { faGamepad } from '@fortawesome/free-solid-svg-icons';
+import { faGhost } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 
 function Social() {
@@ -18,19 +18,19 @@ function Social() {
       <div className="social_row">
         <div className="social_youtube social_button">
           <FontAwesomeIcon icon={faYoutube}  className="social-icon"/>
-          <img src={YouTube} />
+          <FontAwesomeIcon icon={faHeadset}  className="social-deco"/>
         </div>
         <div className="social_facebook social_button">
           <FontAwesomeIcon icon={faFacebook}  className="social-icon"/>
-          <img src={Facebook} />
+          <FontAwesomeIcon icon={faGamepad}  className="social-deco"/>
         </div>
         <div className="social_twitter social_button">
           <FontAwesomeIcon icon={faTwitter}  className="social-icon"/>
-          <img src={Twitter} />
+          <FontAwesomeIcon icon={faGhost}  className="social-deco"/>
         </div>
         <div className="social_instagram social_button">
           <FontAwesomeIcon icon={faInstagram}  className="social-icon"/>
-          <img src={Instagram} />
+          <FontAwesomeIcon icon={faHeart}  className="social-deco"/>
         </div>
       </div>
     </div>
