@@ -13,7 +13,7 @@ export default class Video extends Component {
 
   connectToLivestreamSocket = () =>{
     var ws = StompJS.Stomp.over(()=>{
-      return new WebSocket("ws://localhost:3001/youtube/websocket");
+      return new WebSocket("ws://rest.adrianrossino.com/youtube/websocket");
     });
     let wsConnect = () =>{
       console.log("Connected to YouTube Websocket")
@@ -26,7 +26,7 @@ export default class Video extends Component {
   };
 
   getInitialVideos(){
-    axios.get("http://localhost:3001/videos").then(response =>{
+    axios.get("http://rest.adrianrossino.com/videos").then(response =>{
       this.props.getVideos(response.data);
       if(response.data[0] != null){
         let firstVideo = response.data[0];

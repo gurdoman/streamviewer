@@ -38,7 +38,7 @@ export default class App extends Component {
       "tokenId" : tokenId,
       "source" : "streamviewer"
     }
-    axios.post("http://localhost:3001/users", data)
+    axios.post("http://rest.adrianrossino.com/users", data)
     .then(response =>{
       this.setState({
         logged : "YES",

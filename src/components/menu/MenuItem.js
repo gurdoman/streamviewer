@@ -19,7 +19,7 @@ export default class MenuItem extends Component {
       "tokenId" : tokenId,
       "source" : "google"
     }
-    axios.post("http://localhost:3001/users", data)
+    axios.post("http://rest.adrianrossino.com/users", data)
     .then(response =>{
       this.props.handleAuthSuccess(response.data);
     })
