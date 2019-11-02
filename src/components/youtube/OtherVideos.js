@@ -8,7 +8,7 @@ export default class OtherVideos extends Component {
       <div className="other-videos">
         <div className="other-videos_title">My Other Streams</div>
         {
-          this.props.videos.filter(v =>
+          this.props.videos.slice(0,9).filter(v =>
             v.id !== this.props.video.id
           ).map(v =>{
             return <OtherVideo 
